@@ -1,0 +1,8 @@
+openpyxl
+plotly==5.14.1
+tqdm==4.65.0
+pandas==1.5.3
+numpy
+matplotlib
+sidetable==0.9.1
+-e .

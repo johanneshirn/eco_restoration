@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import sidetable
 import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 
 
 def read_data(file_path, index_col = None):

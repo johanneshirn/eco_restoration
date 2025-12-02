@@ -5,41 +5,12 @@ import pandas as pd
 
 def configure_defaults():
     config = {}
-    config['n_species'] = 16
+    config['n_species'] = 8
     config['min_species'] = 1
-    config['species_order'] = 'abundance'
-    config['training_data'] = 'petrer_limestone'
-    config['testing_data'] = 'petrer_limestone'
-    
-    # config['training_start'] = 'tune_petrer_model'
-    config['training_start'] = 'train_from_scratch'
-
-    config['test_split'] = 0.33
-    config['val_split'] = 0.5
-    config['reconstruction_loss'] = 'bce'
-    # config['reconstruction_loss'] = 'mse'
-    config['depth'] = 32
-    config['n_latent'] = 16
-    config['beta'] = 1
-    config['monitor'] = 'val_loss'
-    config['mode'] = 'min'
-
-    config['learning_rate'] = 1e-3 #1e-3
-    config['batch_size'] = 64
-    config['epochs'] = 200
-    config['stride'] = 2
-
+    config['dataset'] = 'Escuzar'
     config['n_bootstrap'] = 20
-
-    config['n_tile'] = 8
-    config['n_colors'] = 1
-    config['fully_connected'] = False
-    config['testing'] = False
-    
-    config['other_species_handling'] = 'drop_species'
-    
-    config['chunk_size'] = 1
-    
+    config['other_species_handling'] = 'gather_species'
+        
     return config
 
 def get_git_root():
